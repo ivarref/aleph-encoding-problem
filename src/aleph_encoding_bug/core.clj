@@ -1,7 +1,6 @@
 (ns aleph-encoding-bug.core
   (:require [byte-streams :as bs]
-            [aleph.http :as http])
-  (:import (java.io FileInputStream)))
+            [aleph.http :as http]))
 
 (defn handler [req]
   (let [body-string (bs/to-string (:body req))]
